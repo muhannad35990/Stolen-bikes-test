@@ -27,9 +27,8 @@ const Bike: FC<BikeProps> = ({
         />
         <div className="bike__content__container">
           <div>
-            <Link href={`/${id}`}>
-              <h3>{title}</h3>
-            </Link>
+            <h3>{title}</h3>
+
             <p className="date">
               <CalendarMonthIcon />
               {dayjs.unix(theftDate).format("D.M.YYYY")}
@@ -38,7 +37,6 @@ const Bike: FC<BikeProps> = ({
           </div>
           {location && (
             <h4 className="location">
-              {" "}
               <LocationOnIcon />
               {location}
             </h4>
