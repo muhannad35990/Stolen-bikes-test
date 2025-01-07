@@ -5,6 +5,8 @@ export const Styles = styled.div`
   margin: 1rem;
   display: flex;
   align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
   .search__container {
     width: 100%;
     display: flex;
