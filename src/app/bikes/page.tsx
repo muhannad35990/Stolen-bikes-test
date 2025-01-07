@@ -7,7 +7,7 @@ import Loader from "../components/Loader/Loader"
 import { Styles } from "./Styles"
 import Search from "../components/Search/Search"
 import NoData from "../components/NoData/NoData"
-function page() {
+function Bikes() {
   const per_page = 10
   const [page, setPage] = useState(1)
   const [allBikes, setAllBikes] = useState<any>({})
@@ -63,4 +63,4 @@ function page() {
   )
 }
 
-export default page
+export default Bikes

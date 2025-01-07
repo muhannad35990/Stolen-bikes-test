@@ -8,7 +8,7 @@ import Image from "next/image"
 import dayjs from "dayjs"
 import Loader from "@/app/components/Loader/Loader"
 
-function page() {
+function BikeDetails() {
   const params = useParams()
   const [Bike, setBike] = useState<any>({})
   const [isLoading, setIsLoading] = useState(false)
@@ -111,4 +111,4 @@ function page() {
   )
 }
 
-export default page
+export default BikeDetails
