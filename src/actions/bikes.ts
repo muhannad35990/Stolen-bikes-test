@@ -1,4 +1,4 @@
-import { SEARCH, SEARCH_COUNT } from "@/config/endpoints"
+import { BIKES, SEARCH, SEARCH_COUNT } from "@/config/endpoints"
 
 export const getAllBikes = async (
   page: number,
@@ -18,6 +18,16 @@ export const getAllBikes = async (
 
 export const getAllBikesCount = async (params: string) => {
   const response = await fetch(SEARCH_COUNT + params)
+  if (!response.ok) {
+    throw new Error(`Response status: ${response.status}`)
+  }
+
+  const json = await response.json()
+  return json
+}
+
+export const getBikeById = async (id: number) => {
+  const response = await fetch(BIKES + `/${id}`)
   if (!response.ok) {
     throw new Error(`Response status: ${response.status}`)
   }

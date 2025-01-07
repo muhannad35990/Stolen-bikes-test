@@ -17,7 +17,7 @@ const Bike: FC<BikeProps> = ({
 }): ReactElement => {
   return (
     <Styles>
-      <Link href={`/${id}`} className="bike">
+      <Link href={`/bikes/${id}`} className="bike">
         <Image
           alt={title}
           src={image ?? "/images/no-image1.png"}
