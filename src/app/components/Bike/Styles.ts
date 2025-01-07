@@ -31,17 +31,19 @@ export default styled.div`
     align-self: flex-start;
     width: 100%;
     padding: 2rem 1rem 1rem 0;
+
     @media (max-width: 700px) {
       flex-direction: column;
-
       padding: 1rem;
     }
+
     .date {
       font-size: 0.9rem;
       color: #777;
       display: flex;
       align-items: center;
     }
+
     .location {
       display: flex;
       align-items: center;
@@ -49,6 +51,7 @@ export default styled.div`
       font-weight: 600;
       align-self: flex-start;
     }
+
     .desc {
       font-size: 14px;
       margin-top: 1rem;
