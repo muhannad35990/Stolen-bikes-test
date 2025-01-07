@@ -46,4 +46,11 @@ export const Styles = styled.div`
     flex-direction: column;
     align-items: center;
   }
+  .bike__image{
+    width:300px
+    height: 300px;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
 `

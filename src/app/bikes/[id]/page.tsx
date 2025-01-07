@@ -34,6 +34,7 @@ function BikeDetails() {
               height={300}
               alt={Bike.title ?? "bike"}
               src={Bike.large_img ?? "/images/no-image1.png"}
+              className="bike__image"
             />
             <p>Serial: {Bike?.serial}</p>
             <p>Frame Model: {Bike?.frame_model}</p>
